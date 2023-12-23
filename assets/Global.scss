@@ -1,0 +1,59 @@
+@import 'envs';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body-page {
+    opacity: 0;
+    animation: loadPaage 0.3s ease forwards;
+}
+
+.navbar {
+    background: $neutral-900;
+    border-bottom: $neutral-400-50 solid .5px;
+
+    .container-fluid {
+        .navbar-brand {
+            color: $neutral-300;
+        }
+    }
+
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $neutral-300;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 11px;
+    padding-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background: $neutral-900;
+    color: $neutral-500;
+
+    span {
+        font-size: 9px;
+        color: $blue-300;
+    }
+}
+
+@keyframes loadPaage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
