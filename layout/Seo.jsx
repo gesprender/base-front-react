@@ -1,6 +1,7 @@
-import React, { Children, Fragment } from 'react';
+/* eslint-disable react/no-children-prop */
+import { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import { Layout } from '../layout/Layout'
+import { Layout } from '../layout/Layout';
 import { Outlet } from 'react-router-dom';
 
 export default function SEO({
@@ -17,8 +18,9 @@ export default function SEO({
         {Component}
         <Outlet />
       </Fragment>
-    )
-  }
+    );
+  };
+
   return (
     <Fragment>
       <Helmet>
@@ -36,5 +38,5 @@ export default function SEO({
       </Helmet>
       <Site />
     </Fragment>
-  )
+  );
 }

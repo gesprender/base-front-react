@@ -1,6 +1,6 @@
 // Constants for URLs and Routes
 const DEV_URL = 'http://localhost';
-const DEV_PORT = '2024';
+const DEV_PORT = '80';
 const PROD_URL = 'https://app.gesprender.com';
 const API_ENDPOINT = '/api/index.php';
 
@@ -10,9 +10,9 @@ const MODE = globalThis.location.host == 'app.gesprender.com' ? 'Prod' : 'Dev';
 // Configure the base url according to the current mode and route
 let localUrl;
 if (MODE === 'Dev') {
-    localUrl = `${DEV_URL}:${DEV_PORT}`;
+  localUrl = `${DEV_URL}:${DEV_PORT}`;
 } else {
-    localUrl = PROD_URL;
+  localUrl = PROD_URL;
 }
 
 // Export URLs configured

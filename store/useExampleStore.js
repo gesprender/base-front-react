@@ -4,7 +4,7 @@ export const useLoginStore = create((set, get) => ({
   response: {},
 
   testFunction: () => {
-    console.log('test')
+    console.log('test');
   }
 
 }));

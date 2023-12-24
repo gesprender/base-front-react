@@ -1,4 +1,3 @@
-import React from 'react';
 import './NotFound.scss';
 import { BASE_URL } from '../../Configuration/ApiConst';
 
@@ -12,5 +11,5 @@ export default function NotFound() {
         <a href={BASE_URL}>Volver al inicio</a>
       </div>
     </div>
-  )
+  );
 }
