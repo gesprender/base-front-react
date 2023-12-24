@@ -1,5 +1,6 @@
 import './NotFound.scss';
-import { BASE_URL } from '../../Configuration/ApiConst';
+import { BASE_URL } from '../../configuration/ApiConst';
+import React from 'react';
 
 export default function NotFound() {
   
