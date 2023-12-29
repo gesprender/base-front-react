@@ -9,7 +9,8 @@ export default function SEO({
   Title = 'GesPrender Core',
   Description = 'Description Site.',
   Keywords = '',
-  useLayout = true
+  useLayout = true,
+  Ico = ''
 }) {
   const Site = () => {
     if (useLayout) return <Layout children={Component} />;
@@ -27,6 +28,7 @@ export default function SEO({
         <title>{Title}</title>
         <meta name="description" content={Description} />
         <meta name="keywords" content={Keywords} />
+        <link rel="icon" href={Ico} type="image/x-icon" />
         {/* google */}
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
